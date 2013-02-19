@@ -1,11 +1,4 @@
 @import "base";
-// =======Sprites
-// .whatever{
-// 	@include sized-sprite($icons, badge_hit);
-// 	@include retina{
-// 		@include sized-sprite($icons, badge_new);
-// 	}
-// }
 // =======animation example
 // @include keyframes(rotate) {
 //    from {
@@ -13,7 +6,7 @@
 //    }
 //    to {
 //       @include rotate(360);
-//    }
+//    } 
 // }
 // body:hover{
 // 	@include animation(rotate 200s linear infinite);
@@ -26,7 +19,6 @@
 
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
-img{@extend %gray;}
 body{
 	font: {
 	    family: Arial,sans-serif;
