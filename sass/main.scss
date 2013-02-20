@@ -1,1 +1,389 @@
 @import "base";
+
+// torso styles
+.n-torso{
+	font: {
+		family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+		weight: normal;
+		size: 12px;
+	}
+	line-height:1.4;
+	background-color: #fff;
+	padding: 10px;
+	color: #2d2d2d;
+	overflow: hidden;
+	a{
+		color: #176bc1;
+	}
+	h2{
+		margin: 0;
+		padding: 0;
+	}
+	ul,ol{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		list-style: none;
+	}
+	p{
+		padding: 0;
+		margin: 0;
+	}
+	// clear fix
+	.clear{
+		clear: both;
+		overflow: hidden;
+		font-size: 0;
+	}
+
+	// CONTENT
+	.n-content{
+		//background-color: #ff3; //tmp
+		float: left;
+		width: 725px;
+		overflow: hidden;
+	}
+		// location goes here
+		.n-location{
+			margin-bottom: 13px;
+		}
+			.n-location__menu{
+				height: 41px;
+				line-height: 40px;
+				background-color: #eaf0f7;
+				color: #176bc1;
+				li{
+					list-style: none;
+					margin-left: -1px;
+					&:first-child{
+						margin-left: 0;
+					}
+				}
+				a{
+					color: #176bc1;
+					text-decoration: none;
+					display: block;
+					border: 1px solid transparent;
+					border-bottom: none;
+					&:hover{
+						color: #2190fb;
+						border: 1px solid #aecbef;
+						border-bottom: none;
+						@include background-image(linear-gradient(#fff, #f1f1f1)); //TODO: IE?
+					}
+					&.active{
+						color: #2190fb;
+						border: 1px solid #aecbef;
+						border-bottom: none;
+						@include background-image(linear-gradient(#fff, #f1f1f1)); //TODO: IE?
+					}
+				}
+			}
+				.n-location__menu-primary{
+					float: left;
+					margin: 0;
+					padding: 0;
+					a{
+						padding: 0 10px 0 12px;
+					}
+					li{
+						float: left;
+					}
+				}
+				.n-location__menu-secondary{
+					float: right;
+				}
+					.n-location__drop{
+						position: relative;
+						display: inline-block;
+						height: 40px;
+						line-height: 40px;
+						color: #176bc1;
+						border: 1px solid transparent;
+						border-bottom: none;
+						&:hover{
+							// color: #2190fb;
+							border: 1px solid #aecbef;
+							border-bottom: none;
+							@include background-image(linear-gradient(#fff, #f1f1f1)); //TODO: IE?
+							ul{
+								display: block;
+								width: 99.5%;
+							}
+						}
+						i{
+							@include sized-sprite($icons, arrow);
+							position: absolute;
+							top: 19px;
+							right: 10px;
+						}
+						span{
+							display: inline-block;
+							padding: 0 24px 0 11px;
+							cursor: pointer;
+						}
+						ul{
+							display: none;
+							position: absolute;
+							top: 40px;
+							left: 0;
+							z-index: 20;
+							margin: 0;
+							padding: 0;
+							background-color: #fafafa;
+							border: 1px solid #ddebf9;
+							border-top: none;
+							li{
+								cursor: pointer;
+								line-height: 1;
+								margin: 10px 0;
+								padding-left: 11px;
+								&:hover{
+									text-decoration: underline;
+								}
+							}
+						}
+					}
+
+
+
+			.n-location__map{
+				// yandex-map
+				margin-bottom: 5px;
+			}
+
+			// search
+			.n-location__search{
+				margin-top: 5px;
+				overflow: hidden;
+			}
+			.n-btn-search{
+				float: right;
+			}
+				.n-input{
+					width: 616px;
+					height: 26px;
+					padding-left: 9px;
+					border: 1px solid #dcdcdc;
+					background-color: #f7f7f7;
+					//color: #c5c5c5;
+					font-size: 11px;
+					float: left;
+					// TODO: box-shadow
+				}
+				.n-btn{
+					height: 28px;
+					padding: 0 11px;
+					cursor: pointer;
+					background-color: #3f88e2; // TODO: linear-gradient?
+					border: 1px solid #2d71dc; // TODO: linear-gradient?
+					color: #fff;
+					font-size: 11px;
+					font-weight: bold;
+					border-radius: 2px;
+					//float: right;
+					&:hover{
+						background-color: #3879c8;
+					}
+					&:active{
+						background: #2d71dc;
+						box-shadow: inset rgba(84,6,90,.12) 0px 2px 4px;
+					}
+				}
+
+		// comments go here
+		.n-comments{
+			margin-top: 13px;
+			min-height: 500px; //tmp
+			.n-btn{ //TODO: font FuturaDemiC
+				text-transform: uppercase;
+				font-size: 10px;
+				background-color: #71addb;
+				border: 1px solid transparent;
+				padding: 0 10px;
+				height: 23px;
+				line-height: 23px;
+				display: inline-block;
+				&:hover,
+				&:active{
+					text-decoration: none;
+					background-color: #4b96cf;
+					border: 1px solid #69a3cf;
+				}
+			}
+		}
+			.n-comments__title{
+				color: #176bc1;
+				text-transform: uppercase;
+				font-size: 16px;
+				margin-bottom: 3px;
+				// TODO: find font FuturaDemiC
+			}
+			// add new comment
+			.n-comment__add{
+				margin-top: 3px;
+				background-color: #f7f7f7;
+				padding: 10px;
+				margin-bottom: 10px;
+				textarea{
+					width: 698px;
+					height: 72px;
+					resize: none;
+					margin-bottom: 1px;
+					float: none;
+					background-color: #fafafa;
+					padding: 3px;
+				}
+			}
+				.n-comment__add-media{
+					display: inline-block;
+					font-size: 11px;
+					margin-left: 11px;
+					position: relative;
+					&:hover{
+						span{
+							text-decoration: none;
+						}
+						ul{
+							display: block;
+						}
+					}
+					span{
+						cursor: pointer;
+						text-decoration: underline;
+						color: #176bc1;
+					}
+					ul{
+						display: none;
+						position: absolute;
+						top: 15px;
+						left: -10px;
+						background-color: #f7f7f7;
+						padding:  5px 10px 5px;
+						-webkit-border-radius: 5px;
+						border-radius: 5px;
+					}
+					li{
+						position: relative;
+						white-space: nowrap;
+						line-height: 19px;
+					}
+					i{
+						margin-right: 5px;
+						display: inline-block;
+					}
+				}
+
+				.n-media__video{@include sized-sprite($icons, video_ico);}
+				.n-media__photo{@include sized-sprite($icons, photo_ico);}
+
+			.n-comment{
+				border-top: 1px solid #ececec;
+				padding: 14px 0;
+				overflow: hidden;
+				color: #2d2d2d;
+				&:first-child{
+					border-top: none;
+					padding-top: 0;
+				}
+				p{
+					margin-bottom: 15px;
+				}
+			}
+				.n-comment__userpic{
+					float: left;
+					margin-right: 12px;
+				}
+				.n-comment__wrap{
+					overflow: hidden;
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// ASIDE
+	.n-aside{
+		//background-color: #f90; //tmp
+		float: right;
+		width: 249px;
+		overflow: hidden;
+	}
+
+		// popular articles
+		.n-popular{
+			border: 1px solid #eaf0f7;
+			border-left: none;
+			background-color: #fff; //tmp
+			margin-bottom: 9px;
+		}
+			.n-popular__title{
+				height: 41px;
+				margin: 0;
+				line-height: 40px;
+				padding: 0 11px;
+				color: #3c3c3c;
+				font-size: 12px;
+				background-color: #eaf0f7;
+				font-weight: bold;
+			}
+
+		//advertising
+		.n-adv{
+			float: right;
+			max-width: 240px;
+			margin: 0 0 9px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//end page styles
+}

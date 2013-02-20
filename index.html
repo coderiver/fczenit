@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
@@ -6,13 +6,31 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="og:image" content="http://www.fc-zenit.ru/res/img/logo.png" />
 	<meta itemprop="image" content="http://www.fc-zenit.ru/res/img/logo.png" />
-	<title>checkin - Официальный сайт ФК «Зенит»</title>
+	<title>map - Официальный сайт ФК «Зенит»</title>
+
+	<link rel="stylesheet" href="http://www.fc-zenit.ru/res/css/styles.css" />
+	<link rel="stylesheet" href="http://www.fc-zenit.ru/res/css/index.css" />
 
 	<!-- link to our stylesheet goes here -->
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 
-	<link rel="stylesheet" href="http://www.fc-zenit.ru/res/css/styles.css" />
-	<link rel="stylesheet" href="http://www.fc-zenit.ru/res/css/index.css" />
+	<!-- yandex-map -->
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script src="http://yandex.st/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap,
+            myPlacemark;
+
+        function init(){
+            myMap = new ymaps.Map ("map", {
+                center: [59.95, 30.32],
+                zoom: 12
+            });
+        }
+    </script>
+	<!-- /yandex-map -->
+
 	<!--[if lte IE 6]> <link rel="stylesheet" href="/res/css/ie.css" media="screen" /> <![endif]-->
 		<script src="http://www.fc-zenit.ru/res/js/jquery-latest.js"></script>
 	<!--<script type="text/javascript" src="/res/jquery.js"></script>-->
@@ -40,7 +58,9 @@
 
 		<script type="text/javascript" src="http://www.fc-zenit.ru/res/js/main.js"></script>
 		<script type="text/javascript" src="http://www.fc-zenit.ru/res/js/select.js"></script>
-		
+
+
+
 
 	<link rel="stylesheet" href="http://www.fc-zenit.ru/res/css/new_hstyle.css" />
 	<!-- END ZENIT HEAD -->
@@ -124,6 +144,117 @@
 
 
 
+
+
+
+<!-- BEGIN n-torso -->
+<div class="n-torso">
+	<!-- BEGIN n-content -->
+	<div class="n-content">
+		<!-- BEGIN n-location -->
+		<div class="n-location">
+			<div class="n-location__menu">
+				<ul class="n-location__menu-primary">
+					<li><a class="active" href="#">Карта</a></li><li><a href="#">Места</a></li>
+				</ul>
+				<div class="n-location__menu-secondary">
+					<div class="n-location__drop">
+						<span>Санкт-Петербург</span>
+						<i></i>
+						<ul>
+							<li>Киев</li>
+							<li>Минск</li>
+							<li>Москва</li>
+						</ul>
+					</div>
+					<div class="n-location__drop">
+						<span>По популярности</span>
+						<i></i>
+						<ul>
+							<li>По алфавиту</li>
+							<li>По популярности</li>
+							<li>По кол-ву отзывов</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="n-location__map">
+				<div id="map" style="width: 725px; height: 309px"></div>
+			</div>
+			<div class="n-location__search">
+				<form action="#">
+					<input type="text" class="n-input" placeholder="Где будете смотреть футбол?">
+					<input type="submit" value="Найти место" class="n-btn n-btn-search">
+				</form>
+			</div>
+		</div>
+		<!-- END n-location -->
+		<!-- BEGIN n-comments -->
+		<div class="n-comments">
+				<h2 class="n-comments__title">Форум города</h2>
+				<div class="n-comment__add">
+					<form>
+						<textarea class="n-input"></textarea>
+						<input class="n-btn" type="submit" value="Комментировать">
+						<div class="n-comment__add-media">
+							<span>Прикрепить</span>
+							<ul>
+								<li><a href="#"><i class="n-media__video"></i>Видеофайл</a></li>
+								<li><a href="#"><i class="n-media__photo"></i>Изображение</a></li>
+							</ul>
+						</div>
+					</form>
+				</div>
+				<div class="n-comment__holder">
+					<div class="n-comment">
+						<a class="n-comment__userpic" href="#"><img src="http://placehold.it/70x70" alt="" /></a>
+						<div class="n-comment__wrap">
+							<p>Время даже в отвратительной форме у АВБ получал, то начал рег улярно появляться в запасе Просто если ДД какое-то время даже в отвратительной</p>
+							<a href="#" class="n-btn">Ответить</a>
+						</div>
+					</div>
+					<div class="n-comment">daskjdas</div>
+				</div>
+		</div>
+		<!-- END n-comments -->
+	</div>
+	<!-- END n-content -->
+	<!-- BEGIN n-aside -->
+	<div class="n-aside">
+		<!-- BEGIN n-popular -->
+		<div class="n-popular">
+			<h2 class="n-popular__title">Популярные записи</h2>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quod et repellat eius expedita quam a quisquam excepturi eum aut illum magni corrupti corporis perspiciatis dolorum doloremque iusto cumque placeat!
+		</div>
+		<!-- END n-popular -->
+		<!-- BEGIN n-adv -->
+		<div class="n-adv">
+			<a href="#"><img src="img/spoiler/adv.jpg" alt="" /></a>
+		</div>
+		<!-- END n-adv -->
+	</div>
+	<!-- END n-aside -->
+</div>
+<!-- END n-torso -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- BEGIN zbottom -->
 	<div class="zbottom">
 	<div class="bl1 footer">
@@ -172,9 +303,9 @@
 	</div>
 	<table class="bl-b">
 		<tr>
-			<td class="l">&nbsp;</td>
-			<td class="c">&nbsp;</td>
-			<td class="r">&nbsp;</td>
+			<td class="l"></td>
+			<td class="c"></td>
+			<td class="r"></td>
 		</tr>
 	</table>
 	</div>
