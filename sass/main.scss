@@ -306,12 +306,22 @@
 				.n-comment__wrap{
 					position: relative;
 					overflow: hidden;
-					p{ // TODO: fix font-size?  & fix btn size
-						padding-right: 155px;
+				}
+
+					.n-comment__text{// TODO: fix font-size?  & fix btn size
+						margin-right: 70px;
+						overflow: hidden;
 						color: #000;
 						margin-bottom: 6px;
+						p{
+							margin-bottom: 1em;
+						}
 					}
-				}
+					.n-comment__reply-to{
+						font-size: 11px;
+						color: #096aa7;
+						margin: 6px 0;
+					}
 					.n-comment__meta{
 						margin-bottom: 6px;
 						margin-top: 2px;
@@ -383,7 +393,7 @@
 							}
 						}
 					}
-					.n-comment__replies{
+					.n-comment__thread{
 						position: relative;
 						background-color: #f7f7f7;
 						margin-top: 20px;
@@ -433,6 +443,7 @@
 			.n-comments__page-nav{ // TODO: fix box-size
 				border-top: 1px solid #ececec;
 				padding-top: 10px;
+				margin-bottom: 2px;
 				text-align: right;
 				color: #176bc1;
 				font-weight: bold;
