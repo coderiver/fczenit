@@ -89,8 +89,15 @@
 .n-torso .n-comments__page-nav li a:hover { background-color: #c1d8ee; }
 .n-torso .n-comments__page-nav li a.current { background-color: #c1d8ee; color: #fff; }
 .n-torso .n-aside { float: right; width: 249px; overflow: hidden; }
-.n-torso .n-popular { border: 1px solid #eaf0f7; border-left: none; background-color: #fff; margin-bottom: 9px; }
-.n-torso .n-popular__title { height: 41px; margin: 0; line-height: 40px; padding: 0 11px; color: #3c3c3c; font-size: 12px; background-color: #eaf0f7; font-weight: bold; }
+.n-torso .n-popular { border: 1px solid #eaf0f7; border-left: none; background-color: #fff; margin-bottom: 9px; font-size: 11px; }
+.n-torso .n-popular__title { height: 41px; margin: 0 0 20px 0; line-height: 40px; padding: 0 11px; color: #3c3c3c; font-size: 12px; background-color: #eaf0f7; font-weight: bold; }
+.n-torso .n-popular__text { margin-left: 10px; -ms-overflow-y: scroll; overflow-y: scroll; max-height: 350px; }
+.n-torso .n-popular__text ol { margin-left: 15px; margin-right: 5px; }
+.n-torso .n-popular__text ol li { list-style-type: decimal; list-style-position: outside; color: #000; margin-bottom: 17px; }
+.n-torso .n-popular__text ol li a { font-weight: bold; text-decoration: underline; }
+.n-torso .n-popular__text ol li a:hover { text-decoration: none; }
+.n-torso .n-popular__text ol li .n-popular__gathering { color: #a3a3a3; }
+.n-torso .n-popular__text ol li .n-popular__gathering a { font-weight: normal; }
 .n-torso .n-adv { float: right; max-width: 240px; margin: 0 0 9px; }
 
 .lteie8 body { background: red; }
