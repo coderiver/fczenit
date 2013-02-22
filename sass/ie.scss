@@ -1,5 +1,34 @@
 .lteie8{
-	body{
-		background:red;
+	.n-torso{
+		input{
+			border:0;
+			&.n-btn{border:0;}
+		}
+		.n-content__nav__drop{
+			display: inline;
+		}
+		.n-comments__page-nav{
+			ul,li{display: inline;}
+			li{padding: 2px 5px;}
+		}
+		.n-comment__add-media{
+			display: inline;
+			z-index: 1;
+		}
+		.n-popular__text{
+			ol{
+				padding-left: 6px;
+			}
+		}
+		.n-location__search{
+			.n-input{border: 1px solid #dcdcdc}
+		}
+		.n-lightbox{
+			background-color: none;
+			background: url(../img/icons/ie_popup_bg.png);
+		}
+		.n-popup__members{
+			li{display: inline;}
+		}
 	}
 }

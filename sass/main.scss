@@ -76,13 +76,15 @@
 						color: #2190fb;
 						border: 1px solid #aecbef;
 						border-bottom: none;
-						@include background-image(linear-gradient(#fff, #f1f1f1)); //TODO: IE?
+						background-color: #f1f1f1;
+						@include background-image(linear-gradient(#fff, #f1f1f1));
 					}
 					&.active{
 						color: #2190fb;
 						border: 1px solid #aecbef;
 						border-bottom: none;
-						@include background-image(linear-gradient(#fff, #f1f1f1)); //TODO: IE?
+						background-color: #f1f1f1;
+						@include background-image(linear-gradient(#fff, #f1f1f1));
 					}
 				}
 			}
@@ -106,6 +108,7 @@
 				}
 					.n-content__nav__drop{
 						position: relative;
+						z-index: 20;
 						display: inline-block;
 						height: 40px;
 						line-height: 40px;
@@ -116,7 +119,8 @@
 							// color: #2190fb;
 							border: 1px solid #aecbef;
 							border-bottom: none;
-							@include background-image(linear-gradient(#fff, #f1f1f1)); //TODO: IE?
+							background-color: #f1f1f1;
+							@include background-image(linear-gradient(#fff, #f1f1f1));
 							ul{
 								display: block;
 								width: 99.5%;
@@ -138,7 +142,6 @@
 							position: absolute;
 							top: 40px;
 							left: 0;
-							z-index: 20;
 							margin: 0;
 							padding: 0;
 							background-color: #fafafa;
@@ -263,7 +266,7 @@
 								}
 							.n-versus__info{
 								padding-top: 17px;
-								h3{ // TODO: fix fonts
+								h3{
 									margin: 0 0 2px 0;
 									font-size: 16px;
 									color: #000;
@@ -356,7 +359,6 @@
 					font-size: 11px;
 					font-family: 'FuturaDemiC', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 					float: left;
-					// TODO: box-shadow
 				}
 				.n-btn{
 					height: 26px;
@@ -366,8 +368,8 @@
 					padding: 0 11px;
 					font-family: 'FuturaDemiC', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 					cursor: pointer;
-					background-color: #3f88e2; // TODO: linear-gradient?
-					border: 1px solid #2d71dc; // TODO: linear-gradient?
+					background-color: #3f88e2;
+					border: 1px solid #2d71dc;
 					color: #fff !important;
 					font-size: 11px;
 					font-weight: bold;
@@ -387,7 +389,6 @@
 		// comments go here
 		.n-comments{
 			margin-top: 13px;
-			min-height: 500px; //tmp
 			.n-btn{
 				font-family: 'FuturaDemiC', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 				text-transform: uppercase;
@@ -633,7 +634,7 @@
 
 
 			// comments page-nav
-			.n-comments__page-nav{ // TODO: fix box-size
+			.n-comments__page-nav{
 				border-top: 1px solid #ececec;
 				padding-top: 10px;
 				margin-bottom: 2px;
