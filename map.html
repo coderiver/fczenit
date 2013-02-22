@@ -159,34 +159,38 @@
 <div class="n-torso">
 	<!-- BEGIN n-content -->
 	<div class="n-content">
-		<!-- BEGIN n-location -->
-		<div class="n-location">
-			<div class="n-location__menu">
-				<ul class="n-location__menu-primary">
+		<!-- BEGIN n-content__nav -->
+		<div class="n-content__nav">
+			<div class="n-content__nav-primary">
+				<ul>
 					<li><a class="active" href="#">Карта</a></li><li><a href="#">Места</a></li>
 				</ul>
-				<div class="n-location__menu-secondary">
-					<div class="n-location__drop">
-						<span>Санкт-Петербург</span>
-						<i></i>
-						<ul>
-							<li>Киев</li>
-							<li>Минск</li>
-							<li>Москва</li>
-						</ul>
-					</div>
-					<div class="n-location__drop">
-						<span>По популярности</span>
-						<i></i>
-						<ul>
-							<li>По алфавиту</li>
-							<li>По популярности</li>
-							<li>По кол-ву отзывов</li>
-						</ul>
-					</div>
+			</div>
+			<div class="n-content__nav-secondary">
+				<div class="n-content__nav__drop">
+					<span>Санкт-Петербург</span>
+					<i></i>
+					<ul>
+						<li>Киев</li>
+						<li>Минск</li>
+						<li>Москва</li>
+					</ul>
+				</div>
+				<div class="n-content__nav__drop">
+					<span>По популярности</span>
+					<i></i>
+					<ul>
+						<li>По алфавиту</li>
+						<li>По популярности</li>
+						<li>По кол-ву отзывов</li>
+					</ul>
 				</div>
 			</div>
-			<div class="n-location__map">
+		</div>
+		<!-- END n-content__nav -->
+		<!-- BEGIN n-location -->
+		<div class="n-location">
+			<div class="n-map">
 				<div id="map" style="width: 725px; height: 309px"></div>
 			</div>
 			<div class="n-location__search">
@@ -354,7 +358,7 @@
 	<div class="n-aside">
 		<!-- BEGIN n-popular -->
 		<div class="n-popular">
-			<h2 class="n-popular__title">Популярные записи</h2>
+			<h2 class="n-popular__title">Популярные места</h2>
 			<div class="n-popular__text">
 				<ol>
 					<li>

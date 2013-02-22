@@ -48,17 +48,13 @@
 		.n-location{
 			margin-bottom: 13px;
 		}
-			.n-location__menu{
+			.n-content__nav{
 				height: 41px;
 				line-height: 40px;
 				background-color: #eaf0f7;
 				color: #176bc1;
 				li{
 					list-style: none;
-					margin-left: -1px;
-					&:first-child{
-						margin-left: 0;
-					}
 				}
 				a{
 					color: #176bc1;
@@ -80,7 +76,7 @@
 					}
 				}
 			}
-				.n-location__menu-primary{
+				.n-content__nav-primary{
 					float: left;
 					margin: 0;
 					padding: 0;
@@ -89,12 +85,16 @@
 					}
 					li{
 						float: left;
+						margin-left: -1px;
+						&:first-child{
+							margin-left: 0;
+						}
 					}
 				}
-				.n-location__menu-secondary{
+				.n-content__nav-secondary{
 					float: right;
 				}
-					.n-location__drop{
+					.n-content__nav__drop{
 						position: relative;
 						display: inline-block;
 						height: 40px;
@@ -147,12 +147,142 @@
 					}
 
 
-
-			.n-location__map{
+			//map
+			.n-map{
 				// yandex-map
 				margin-bottom: 5px;
 			}
-
+			//place
+			.n-place{
+				overflow: hidden;
+				margin-top: 10px;
+			}
+				.n-place__item{
+					margin-bottom: 15px;
+				}
+					.n-place__img{
+						float: left;
+						width: 202px;
+						overflow: hidden;
+						margin-right: 15px;
+						max-height: 125px;
+					}
+					.n-place__info{
+						overflow: hidden;
+						h2{
+							font-size: 20px;
+							color: #000;
+						}
+						p{
+							color: #2d2d2d;
+						}
+					}
+						.n-place__gathering {
+							color: #a3a3a3;
+							margin: 13px 0 15px;
+							a{
+								text-decoration: underline;
+								&:hover{
+									text-decoration: none;
+								}
+							}
+						}
+						.n-rating{
+							font-size: 20px;
+							font-weight: bold;
+							.n-rating__img{
+								display: inline-block;
+								margin-right: 10px;
+								width: 65px;
+								overflow: hidden;
+							}
+							.n-rating__rate{
+								display: inline-block;
+							}
+							.n-rating__col1{
+								float: left;
+								border-right: 1px solid #e4eefa;
+								color: #c8ae5d;
+								padding-right: 10px;
+							}
+							.n-rating__col2{
+								overflow: hidden;
+								color: #0c4da2;
+								padding-left: 10px;
+							}
+						}
+				//n-matches
+				.n-matches{
+					h2{
+						font-size: 16px;
+						text-transform: uppercase;
+						color: #176bc1;
+						border-bottom: 1px solid #ececec;
+					}
+					li{
+						border-bottom: 1px solid #ececec;
+					}
+					.n-btn{
+						text-transform: uppercase;
+					}
+				}
+					.n-matches__versus{
+						overflow: hidden;
+						height: 90px; //tmp
+						padding: 15px 0; //tmp
+					}
+						.n-versus__media,
+						.n-versus__media-img,
+						.n-versus__info{float: left;}
+						.n-versus__gathering{float: right;}
+							.n-versus__media{
+								width: 148px;
+								line-height: 90px;
+								overflow: hidden;
+								position: relative;
+								i{
+									@include sized-sprite($icons, colon_ico);
+									position: absolute;
+									top: 50%;
+									left: 61px;
+								}
+							}
+								.n-versus__media-img{
+									width: 55px;
+									margin-right: 15px;
+								}
+							.n-versus__info{
+								padding-top: 17px;
+								h3{ // TODO: fix fonts
+									margin: 0 0 2px 0;
+									font-size: 16px;
+									color: #000;
+								}
+							}
+							.n-versus__gathering{
+								text-align: right;
+								color: #a3a3a3;
+								padding-top: 13px;
+								a{
+									color: #176bc1;
+									text-decoration: underline;
+									&:hover{
+										text-decoration: none;
+									}
+								}
+								.n-btn-join{
+									background-color: #075fa8;
+									margin-left: 6px;
+									border: 1px solid transparent;
+								}
+								.n-btn-invite{
+									background-color: #71addb;
+									border: 1px solid transparent;
+								}
+							}
+								.n-versus__invite{
+									margin-top: 5px;
+								}
 			// search
 			.n-location__search{
 				margin-top: 5px;
@@ -174,14 +304,18 @@
 				}
 				.n-btn{
 					height: 28px;
+					line-height: 28px;
+					display: inline-block;
+					vertical-align: middle;
 					padding: 0 11px;
 					cursor: pointer;
 					background-color: #3f88e2; // TODO: linear-gradient?
 					border: 1px solid #2d71dc; // TODO: linear-gradient?
-					color: #fff;
+					color: #fff !important;
 					font-size: 11px;
 					font-weight: bold;
 					border-radius: 2px;
+					text-decoration: none !important;
 					//float: right;
 					&:hover{
 						background-color: #3879c8;
@@ -582,23 +716,10 @@
 
 
 
-
-
-
-//end page styles
-}
-
-
-
-
-/*
- * CSS Styles that are needed by jScrollPane for it to operate correctly.
- *
- * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
- * may not operate correctly without them.
- */
-
-
+// * CSS Styles that are needed by jScrollPane for it to operate correctly.
+// *
+// * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+// * may not operate correctly without them.
 .horizontal-only
 {
 	height: auto;
@@ -718,4 +839,9 @@
 * html .jspCorner
 {
 	margin: 0 -3px 0 0;
+}
+
+
+
+//end page styles
 }
