@@ -130,7 +130,7 @@
 .n-torso .n-comments__page-nav li a.current { background-color: #c1d8ee; color: #fff; }
 .n-torso .n-aside { float: right; width: 249px; overflow: hidden; }
 .n-torso .n-popular { border: 1px solid #eaf0f7; border-left: none; background-color: #fff; margin-bottom: 9px; font-size: 11px; padding-bottom: 2px; }
-.n-torso .n-popular__title { height: 41px; margin: 0 0 2px 0; line-height: 40px; padding: 0 11px; color: #3c3c3c; font-size: 12px; background-color: #eaf0f7; font-weight: bold; }
+.n-torso .n-popular__title { height: 40px; margin: 0 0 2px 0; line-height: 40px; padding: 0 11px; color: #3c3c3c; font-size: 12px; background-color: #eaf0f7; font-weight: bold; }
 .n-torso .n-popular__text { margin-left: 10px; overflow: auto; max-height: 350px; }
 .n-torso .n-popular__text ol { margin: 10px 5px 10px 18px; }
 .n-torso .n-popular__text ol li { list-style-type: decimal; list-style-position: outside; color: #000; margin-bottom: 17px; }
