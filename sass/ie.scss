@@ -1,4 +1,4 @@
-.lteie8{
+.ie7{
 	.n-torso{
 		input{
 			border:0;
@@ -16,8 +16,9 @@
 		}
 		.n-comment__add-media{
 			display: inline;
-			padding-left: 10px;
+			padding-left: 15px;
 			z-index: 1;
+			margin-top: 5px;
 		}
 		.n-popular__text{
 			ol{
@@ -34,5 +35,15 @@
 		.n-popup__members{
 			li{display: inline;}
 		}
+	}
+}
+
+.ie8{
+	.n-lightbox{
+		background-color: none;
+		background: url(../img/icons/ie_popup_bg.png);
+	}
+	.n-comment__add-media{
+		margin-top: 5px;
 	}
 }

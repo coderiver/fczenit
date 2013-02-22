@@ -174,14 +174,17 @@
 
 @font-face { font-family: 'FuturaDemiC'; src: url("../fonts/futurademic.eot"); src: url("../fonts/futurademic.eot?#iefix") format("embedded-opentype"), url("../fonts/futurademic.woff") format("woff"), url("../fonts/futurademic.ttf") format("truetype"), url("../fonts/futurademic.svg#futurademic") format("svg"); font-weight: normal; font-style: normal; }
 
-.lteie8 .n-torso input { border: 0; }
-.lteie8 .n-torso input.n-btn { border: 0; }
-.lteie8 .n-torso input.n-btn:hover, .lteie8 .n-torso input.n-btn:active { border: 0; }
-.lteie8 .n-torso .n-content__nav__drop { display: inline; }
-.lteie8 .n-torso .n-comments__page-nav ul, .lteie8 .n-torso .n-comments__page-nav li { display: inline; }
-.lteie8 .n-torso .n-comments__page-nav li { padding: 2px 5px; }
-.lteie8 .n-torso .n-comment__add-media { display: inline; padding-left: 10px; z-index: 1; }
-.lteie8 .n-torso .n-popular__text ol { padding-left: 6px; }
-.lteie8 .n-torso .n-location__search .n-input { border: 1px solid gainsboro; }
-.lteie8 .n-torso .n-lightbox { background-color: none; background: url(../img/icons/ie_popup_bg.png); }
-.lteie8 .n-torso .n-popup__members li { display: inline; }
+.ie7 .n-torso input { border: 0; }
+.ie7 .n-torso input.n-btn { border: 0; }
+.ie7 .n-torso input.n-btn:hover, .ie7 .n-torso input.n-btn:active { border: 0; }
+.ie7 .n-torso .n-content__nav__drop { display: inline; }
+.ie7 .n-torso .n-comments__page-nav ul, .ie7 .n-torso .n-comments__page-nav li { display: inline; }
+.ie7 .n-torso .n-comments__page-nav li { padding: 2px 5px; }
+.ie7 .n-torso .n-comment__add-media { display: inline; padding-left: 15px; z-index: 1; margin-top: 5px; }
+.ie7 .n-torso .n-popular__text ol { padding-left: 6px; }
+.ie7 .n-torso .n-location__search .n-input { border: 1px solid gainsboro; }
+.ie7 .n-torso .n-lightbox { background-color: none; background: url(../img/icons/ie_popup_bg.png); }
+.ie7 .n-torso .n-popup__members li { display: inline; }
+
+.ie8 .n-lightbox { background-color: none; background: url(../img/icons/ie_popup_bg.png); }
+.ie8 .n-comment__add-media { margin-top: 5px; }
