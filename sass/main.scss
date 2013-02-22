@@ -29,6 +29,8 @@
 	p{
 		padding: 0;
 		margin: 0;
+		font-size: 12px;
+		font-weight: normal;
 	}
 	// clear fix
 	.clear{
@@ -47,6 +49,15 @@
 		// location goes here
 		.n-location{
 			margin-bottom: 13px;
+			.n-btn-join{
+				background-color: #075fa8;
+				margin-left: 6px;
+				border: 1px solid transparent;
+			}
+			.n-btn-invite{
+				background-color: #71addb;
+				border: 1px solid transparent;
+			}
 		}
 			.n-content__nav{
 				height: 41px;
@@ -180,6 +191,8 @@
 						.n-place__gathering {
 							color: #a3a3a3;
 							margin: 13px 0 15px;
+							font-size: 12px;
+							font-weight: normal;
 							a{
 								text-decoration: underline;
 								&:hover{
@@ -270,19 +283,58 @@
 										text-decoration: none;
 									}
 								}
-								.n-btn-join{
-									background-color: #075fa8;
-									margin-left: 6px;
-									border: 1px solid transparent;
-								}
-								.n-btn-invite{
-									background-color: #71addb;
-									border: 1px solid transparent;
-								}
 							}
 								.n-versus__invite{
 									margin-top: 5px;
 								}
+				.n-places__list{
+					h3{
+						font-size: 16px;
+						font-weight: bold;
+						color: #000;
+					}
+					p{
+						font-size: 12px;
+					}
+					ol{
+						margin-left: 10px;
+					}
+					li{
+						list-style-type: decimal;
+						list-style-position: inside;
+						position: relative;
+						color: #000;
+						font-size: 16px;
+						font-weight: bold;
+						border-top: 1px solid #ececec;
+						padding: 15px 0;
+						&:first-child{
+							border-top: none;
+						}
+					}
+					.n-place__gathering,
+					.n-places__btn,
+					p{
+						padding-left: 20px;
+					}
+					.n-rating{
+						position: absolute;
+						right: 0;
+						top: 15px;
+					}
+				}
+
+				.n-places__btn{
+					.n-btn-invite{
+						margin-left: 4px;
+					}
+					.n-btn-join{
+						margin-left: 0;
+					}
+				}
+
+
+
 			// search
 			.n-location__search{
 				margin-top: 5px;

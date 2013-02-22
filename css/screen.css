@@ -3,10 +3,12 @@
 .n-torso h2 { margin: 0; padding: 0; }
 .n-torso ul, .n-torso ol { margin: 0; padding: 0; }
 .n-torso li { list-style: none; }
-.n-torso p { padding: 0; margin: 0; }
+.n-torso p { padding: 0; margin: 0; font-size: 12px; font-weight: normal; }
 .n-torso .clear { clear: both; overflow: hidden; font-size: 0; }
 .n-torso .n-content { float: left; width: 725px; overflow: hidden; }
 .n-torso .n-location { margin-bottom: 13px; }
+.n-torso .n-location .n-btn-join { background-color: #075fa8; margin-left: 6px; border: 1px solid transparent; }
+.n-torso .n-location .n-btn-invite { background-color: #71addb; border: 1px solid transparent; }
 .n-torso .n-content__nav { height: 41px; line-height: 40px; background-color: #eaf0f7; color: #176bc1; }
 .n-torso .n-content__nav li { list-style: none; }
 .n-torso .n-content__nav a { color: #176bc1; text-decoration: none; display: block; border: 1px solid transparent; border-bottom: none; }
@@ -32,7 +34,7 @@
 .n-torso .n-place__info { overflow: hidden; }
 .n-torso .n-place__info h2 { font-size: 20px; color: #000; }
 .n-torso .n-place__info p { color: #2d2d2d; }
-.n-torso .n-place__gathering { color: #a3a3a3; margin: 13px 0 15px; }
+.n-torso .n-place__gathering { color: #a3a3a3; margin: 13px 0 15px; font-size: 12px; font-weight: normal; }
 .n-torso .n-place__gathering a { text-decoration: underline; }
 .n-torso .n-place__gathering a:hover { text-decoration: none; }
 .n-torso .n-rating { font-size: 20px; font-weight: bold; }
@@ -54,9 +56,16 @@
 .n-torso .n-versus__gathering { text-align: right; color: #a3a3a3; padding-top: 13px; }
 .n-torso .n-versus__gathering a { color: #176bc1; text-decoration: underline; }
 .n-torso .n-versus__gathering a:hover { text-decoration: none; }
-.n-torso .n-versus__gathering .n-btn-join { background-color: #075fa8; margin-left: 6px; border: 1px solid transparent; }
-.n-torso .n-versus__gathering .n-btn-invite { background-color: #71addb; border: 1px solid transparent; }
 .n-torso .n-versus__invite { margin-top: 5px; }
+.n-torso .n-places__list h3 { font-size: 16px; font-weight: bold; color: #000; }
+.n-torso .n-places__list p { font-size: 12px; }
+.n-torso .n-places__list ol { margin-left: 10px; }
+.n-torso .n-places__list li { list-style-type: decimal; list-style-position: inside; position: relative; color: #000; font-size: 16px; font-weight: bold; border-top: 1px solid #ececec; padding: 15px 0; }
+.n-torso .n-places__list li:first-child { border-top: none; }
+.n-torso .n-places__list .n-place__gathering, .n-torso .n-places__list .n-places__btn, .n-torso .n-places__list p { padding-left: 20px; }
+.n-torso .n-places__list .n-rating { position: absolute; right: 0; top: 15px; }
+.n-torso .n-places__btn .n-btn-invite { margin-left: 4px; }
+.n-torso .n-places__btn .n-btn-join { margin-left: 0; }
 .n-torso .n-location__search { margin-top: 5px; overflow: hidden; }
 .n-torso .n-btn-search { float: right; }
 .n-torso .n-input { width: 616px; height: 26px; padding-left: 9px; border: 1px solid gainsboro; background-color: #f7f7f7; font-size: 11px; float: left; }
