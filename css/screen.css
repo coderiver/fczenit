@@ -176,10 +176,11 @@
 
 .lteie8 .n-torso input { border: 0; }
 .lteie8 .n-torso input.n-btn { border: 0; }
+.lteie8 .n-torso input.n-btn:hover, .lteie8 .n-torso input.n-btn:active { border: 0; }
 .lteie8 .n-torso .n-content__nav__drop { display: inline; }
 .lteie8 .n-torso .n-comments__page-nav ul, .lteie8 .n-torso .n-comments__page-nav li { display: inline; }
 .lteie8 .n-torso .n-comments__page-nav li { padding: 2px 5px; }
-.lteie8 .n-torso .n-comment__add-media { display: inline; z-index: 1; }
+.lteie8 .n-torso .n-comment__add-media { display: inline; padding-left: 10px; z-index: 1; }
 .lteie8 .n-torso .n-popular__text ol { padding-left: 6px; }
 .lteie8 .n-torso .n-location__search .n-input { border: 1px solid gainsboro; }
 .lteie8 .n-torso .n-lightbox { background-color: none; background: url(../img/icons/ie_popup_bg.png); }

@@ -2,7 +2,10 @@
 	.n-torso{
 		input{
 			border:0;
-			&.n-btn{border:0;}
+			&.n-btn{
+				border:0;
+				&:hover, &:active{border:0;}
+			}
 		}
 		.n-content__nav__drop{
 			display: inline;
@@ -13,6 +16,7 @@
 		}
 		.n-comment__add-media{
 			display: inline;
+			padding-left: 10px;
 			z-index: 1;
 		}
 		.n-popular__text{
