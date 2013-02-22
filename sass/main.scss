@@ -41,7 +41,6 @@
 
 	// CONTENT
 	.n-content{
-		//background-color: #ff3; //tmp
 		float: left;
 		width: 725px;
 		overflow: hidden;
@@ -183,6 +182,7 @@
 						h2{
 							font-size: 20px;
 							color: #000;
+							font-family: 'FuturaDemiC', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 						}
 						p{
 							color: #2d2d2d;
@@ -235,9 +235,6 @@
 					li{
 						border-bottom: 1px solid #ececec;
 					}
-					.n-btn{
-						text-transform: uppercase;
-					}
 				}
 					.n-matches__versus{
 						overflow: hidden;
@@ -271,6 +268,7 @@
 									font-size: 16px;
 									color: #000;
 									font-weight: bold;
+									font-family: 'FuturaDemiC', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 								}
 							}
 							.n-versus__gathering{
@@ -344,6 +342,9 @@
 			}
 			.n-btn-search{
 				float: right;
+				width: 95px;
+				padding: 0;
+				height: 28px !important;
 			}
 				.n-input{
 					width: 616px;
@@ -353,15 +354,17 @@
 					background-color: #f7f7f7;
 					//color: #c5c5c5;
 					font-size: 11px;
+					font-family: 'FuturaDemiC', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 					float: left;
 					// TODO: box-shadow
 				}
 				.n-btn{
-					height: 28px;
+					height: 26px;
 					line-height: 28px;
 					display: inline-block;
 					vertical-align: middle;
 					padding: 0 11px;
+					font-family: 'FuturaDemiC', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 					cursor: pointer;
 					background-color: #3f88e2; // TODO: linear-gradient?
 					border: 1px solid #2d71dc; // TODO: linear-gradient?
@@ -370,6 +373,7 @@
 					font-weight: bold;
 					border-radius: 2px;
 					text-decoration: none !important;
+					text-transform: uppercase;
 					//float: right;
 					&:hover{
 						background-color: #3879c8;
@@ -384,13 +388,14 @@
 		.n-comments{
 			margin-top: 13px;
 			min-height: 500px; //tmp
-			.n-btn{ //TODO: font FuturaDemiC
+			.n-btn{
+				font-family: 'FuturaDemiC', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 				text-transform: uppercase;
 				font-size: 10px;
 				background-color: #71addb;
 				border: 1px solid transparent;
 				padding: 0 10px;
-				height: 23px;
+				height: 21px;
 				line-height: 23px;
 				display: inline-block;
 				&:hover,
@@ -404,9 +409,9 @@
 			.n-comments__title{
 				color: #176bc1;
 				text-transform: uppercase;
+				font-family: 'FuturaDemiC', Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 				font-size: 16px;
 				margin-bottom: 3px;
-				// TODO: find font FuturaDemiC
 			}
 			// add new comment
 			.n-comment__add{
@@ -496,7 +501,7 @@
 					overflow: hidden;
 				}
 
-					.n-comment__text{// TODO: fix font-size?  & fix btn size
+					.n-comment__text{
 						margin-right: 70px;
 						overflow: hidden;
 						color: #000;
