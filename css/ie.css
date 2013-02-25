@@ -12,3 +12,4 @@
 
 .ie8 .n-lightbox { background-color: none; background: url(../img/icons/ie_popup_bg.png); }
 .ie8 .n-comment__add-media { margin-top: 5px; }
+.ie8 .n-places__list h3 { margin-left: -10px; }
