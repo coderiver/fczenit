@@ -595,6 +595,9 @@
 							@include sized-sprite($icons, plus_ico);
 							top: -7px;
 							cursor: pointer;
+							&:hover{
+								@include sized-sprite($icons, plus_hover_ico);
+							}
 							&.disable{
 								@include sized-sprite($icons, plus_disable_ico);
 								cursor: default;
@@ -604,6 +607,9 @@
 								@include sized-sprite($icons, minus_ico);
 							top: 9px;
 							cursor: pointer;
+							&:hover{
+								@include sized-sprite($icons, minus_hover_ico);
+							}
 							&.disable{
 								@include sized-sprite($icons, minus_disable_ico);
 								cursor: default;
