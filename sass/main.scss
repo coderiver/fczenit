@@ -38,7 +38,7 @@
 	}
 	// clear fix
 	.clear{
-		clear: both;
+		clear: both; 
 		overflow: hidden;
 		font-size: 0;
 	}
@@ -47,7 +47,8 @@
 	.n-content{
 		float: left;
 		width: 725px;
-		overflow: hidden;
+		@extend %clr;
+		margin-bottom: 20px;
 	}
 		// location goes here
 		.n-location{
@@ -185,6 +186,7 @@
 			.n-map{
 				// yandex-map
 				margin-bottom: 5px;
+				position: relative;
 			}
 			//place
 			.n-place{
@@ -1034,3 +1036,65 @@
 
 //end page styles
 }
+
+
+
+
+
+
+
+
+
+
+.n-checkpoint{
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+	.n-checkpoint__label{
+		position: relative;
+		background-color: #fff;
+		display: block;
+		width: 142px;
+		padding-left: 15px;
+		height: 18px;
+		line-height: 18px;
+		color: #176bc1;
+		font-size: 10px;
+		font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+	}
+	.n-icon-chekpoint{
+		position: absolute;
+		top: 0;
+		left: -8px;
+		@include sized-sprite($icons, checkpoint);
+	}
+	.n-checkpoint__gradient{
+		@include sized-sprite($icons, checkpoint_grad);
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+
+.n-point{
+	border: 3px solid #accceb;
+	background-color: #fff;
+	@include border-radius(50%);
+	text-align: center;
+	a{
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+	.n-point__number{
+		color: #000;
+		font-size: 10px;
+		font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+	}
