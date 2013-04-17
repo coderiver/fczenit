@@ -1,20 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--[if lte IE 8]><html lang="ru-RU" class="lteie8"><![endif]-->
+<!--[if IE 7]><html lang="ru-RU" class="ie7"><![endif]-->
+<!--[if IE 8]><html lang="ru-RU" class="ie8"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="ru-RU"><!--<![endif]-->
 <head>
 	<!-- BEGIN ZENIT HEAD -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="og:image" content="http://www.fc-zenit.ru/res/img/logo.png" />
 	<meta itemprop="image" content="http://www.fc-zenit.ru/res/img/logo.png" />
-	<title>map - Официальный сайт ФК «Зенит»</title>
+	<title>list - Официальный сайт ФК «Зенит»</title>
 
 	<link rel="stylesheet" href="http://www.fc-zenit.ru/res/css/styles.css" />
 	<link rel="stylesheet" href="http://www.fc-zenit.ru/res/css/index.css" />
 
-	<!-- link to our stylesheet goes here -->
+	<!-- LINK TO OUR STYLESHEET GOES HERE -->
 	<link rel="stylesheet" media="screen" href="css/screen.css">
 
-	<!-- yandex-map -->
+	<!-- YANDEX-MAP -->
     <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
     <script src="http://yandex.st/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -29,7 +30,7 @@
             });
         }
     </script>
-	<!-- /yandex-map -->
+	<!-- /YANDEX-MAP -->
 
 	<!--[if lte IE 6]> <link rel="stylesheet" href="/res/css/ie.css" media="screen" /> <![endif]-->
 		<script src="http://www.fc-zenit.ru/res/js/jquery-latest.js"></script>
@@ -56,13 +57,21 @@
 		</script>
 		<link rel="stylesheet" href="http://www.fc-zenit.ru/res/tooltip/jquery.tooltip.css" />
 
+		<!-- BEGIN JScrollPane -->
+		<script type="text/javascript" src="js/common.js"></script>
+
+		<!-- the mousewheel plugin - optional to provide mousewheel support -->
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<!-- END JScrollPane -->
+
+
 		<script type="text/javascript" src="http://www.fc-zenit.ru/res/js/main.js"></script>
 		<script type="text/javascript" src="http://www.fc-zenit.ru/res/js/select.js"></script>
 
-
-
-
-	<link rel="stylesheet" href="http://www.fc-zenit.ru/res/css/new_hstyle.css" />
+		<link rel="stylesheet" href="http://www.fc-zenit.ru/res/css/new_hstyle.css" />
 	<!-- END ZENIT HEAD -->
 </head>
 <body>
@@ -151,178 +160,111 @@
 <div class="n-torso">
 	<!-- BEGIN n-content -->
 	<div class="n-content">
-		<!-- BEGIN n-location -->
-		<div class="n-location">
-			<div class="n-location__menu">
-				<ul class="n-location__menu-primary">
-					<li><a class="active" href="#">Карта</a></li><li><a href="#">Места</a></li>
+		<!-- BEGIN n-content__nav -->
+		<div class="n-content__nav">
+			<div class="n-content__nav-primary">
+				<ul>
+					<li><a href="#">Карта</a></li><li><a class="active" href="#">Места</a></li>
 				</ul>
-				<div class="n-location__menu-secondary">
-					<div class="n-location__drop">
-						<span>Санкт-Петербург</span>
-						<i></i>
-						<ul>
-							<li>Киев</li>
-							<li>Минск</li>
-							<li>Москва</li>
-						</ul>
-					</div>
-					<div class="n-location__drop">
-						<span>По популярности</span>
-						<i></i>
-						<ul>
-							<li>По алфавиту</li>
-							<li>По популярности</li>
-							<li>По кол-ву отзывов</li>
-						</ul>
-					</div>
+			</div>
+			<div class="n-content__nav-secondary">
+				<div class="n-content__nav__drop">
+					<span>По популярности</span>
+					<i></i>
+					<ul>
+						<li>По алфавиту</li>
+						<li>По популярности</li>
+						<li>По кол-ву отзывов</li>
+					</ul>
 				</div>
 			</div>
-			<div class="n-location__map">
-				<div id="map" style="width: 725px; height: 309px"></div>
+		</div>
+		<!-- END n-content__nav -->
+		<!-- BEGIN n-location -->
+		<div class="n-location">
+			<!-- BEGIN n-places -->
+			<div class="n-places">
+				<!-- BEGIN n-places__list -->
+				<div class="n-places__list">
+					<ol>
+						<li>
+							<h3>Столовая СЗГМУ им. И.И. Мечникова</h3>
+							<p>ул. Мечникова, д. 2</p>
+							<p>(812) 928-44-66</p>
+							<div class="n-place__gathering">Собираются пойти - <a href="#">95 человек</a></div>
+							<div class="n-places__btn"><a href="#" class="n-btn n-btn-join">Присоединиться</a><a href="#" class="n-btn n-btn-invite">Пригласить друзей</a></div>
+							<div class="n-rating">
+								<div class="n-rating__col1">
+									<div class="n-rating__img"><img src="img/spoiler/rating-1.jpg" alt="" /></div>
+									<div class="n-rating__rate">15%</div>
+								</div>
+								<div class="n-rating__col2">
+									<div class="n-rating__img"><img src="img/spoiler/rating-2.jpg" alt="" /></div>
+									<div class="n-rating__rate">10%</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h3>Столовая СЗГМУ им. И.И. Мечникова</h3>
+							<p>ул. Мечникова, д. 2</p>
+							<p>(812) 928-44-66</p>
+							<div class="n-place__gathering">Собираются пойти - <a href="#">95 человек</a></div>
+							<div class="n-places__btn"><a href="#" class="n-btn n-btn-join">Присоединиться</a><a href="#" class="n-btn n-btn-invite">Пригласить друзей</a></div>
+							<div class="n-rating">
+								<div class="n-rating__col1">
+									<div class="n-rating__img"><img src="img/spoiler/rating-1.jpg" alt="" /></div>
+									<div class="n-rating__rate">15%</div>
+								</div>
+								<div class="n-rating__col2">
+									<div class="n-rating__img"><img src="img/spoiler/rating-2.jpg" alt="" /></div>
+									<div class="n-rating__rate">10%</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h3>Столовая СЗГМУ им. И.И. Мечникова</h3>
+							<p>ул. Мечникова, д. 2</p>
+							<p>(812) 928-44-66</p>
+							<div class="n-place__gathering">Собираются пойти - <a href="#">95 человек</a></div>
+							<div class="n-places__btn"><a href="#" class="n-btn n-btn-join">Присоединиться</a><a href="#" class="n-btn n-btn-invite">Пригласить друзей</a></div>
+							<div class="n-rating">
+								<div class="n-rating__col1">
+									<div class="n-rating__img"><img src="img/spoiler/rating-1.jpg" alt="" /></div>
+									<div class="n-rating__rate">15%</div>
+								</div>
+								<div class="n-rating__col2">
+									<div class="n-rating__img"><img src="img/spoiler/rating-2.jpg" alt="" /></div>
+									<div class="n-rating__rate">10%</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h3>Столовая СЗГМУ им. И.И. Мечникова</h3>
+							<p>ул. Мечникова, д. 2</p>
+							<p>(812) 928-44-66</p>
+							<div class="n-place__gathering">Собираются пойти - <a href="#">95 человек</a></div>
+							<div class="n-places__btn"><a href="#" class="n-btn n-btn-join">Присоединиться</a><a href="#" class="n-btn n-btn-invite">Пригласить друзей</a></div>
+							<div class="n-rating">
+								<div class="n-rating__col1">
+									<div class="n-rating__img"><img src="img/spoiler/rating-1.jpg" alt="" /></div>
+									<div class="n-rating__rate">15%</div>
+								</div>
+								<div class="n-rating__col2">
+									<div class="n-rating__img"><img src="img/spoiler/rating-2.jpg" alt="" /></div>
+									<div class="n-rating__rate">10%</div>
+								</div>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<!-- END n-places__list -->
 			</div>
-			<div class="n-location__search">
-				<form action="#">
-					<input type="text" class="n-input" placeholder="Где будете смотреть футбол?">
-					<input type="submit" value="Найти место" class="n-btn n-btn-search">
-				</form>
-			</div>
+			<!-- END n-places -->
 		</div>
 		<!-- END n-location -->
 		<!-- BEGIN n-comments -->
 		<div class="n-comments">
-				<h2 class="n-comments__title">Форум города</h2>
-				<div class="n-comment__add">
-					<form>
-						<textarea class="n-input"></textarea>
-						<input class="n-btn" type="submit" value="Комментировать">
-						<div class="n-comment__add-media">
-							<span>Прикрепить</span>
-							<ul>
-								<li><a href="#"><i class="n-media__video"></i>Видеофайл</a></li>
-								<li><a href="#"><i class="n-media__photo"></i>Изображение</a></li>
-							</ul>
-						</div>
-					</form>
-				</div>
 				<div class="n-comment__holder">
-					<div class="n-comment">
-						<a class="n-comment__userpic" href="#"><img src="http://placehold.it/70x70" alt="" /></a>
-						<div class="n-comment__wrap">
-							<div class="n-comment__meta">
-								<a href="#">tema_</a><span>написал статус</span><span>10 мая 12:30</span><a href="#">Санкт-Петербург</a>
-							</div>
-							<div class="n-mark__holder">
-								<div class="n-mark">
-									<i class="n-mark__plus"></i>
-									<span class="n-mark__score n-mark__negative">-18</span>
-									<i class="n-mark__minus"></i>
-								</div>
-							</div>
-							<div class="n-comment__text">
-								<p>Время даже в отвратительной форме у АВБ получал, то начал регулярно появляться в запасе Просто если ДД какое-то время даже в отвратительной</p>
-							</div>
-							<a href="#" class="n-btn">Ответить</a>
-							<!-- BEGIN n-comment__thread -->
-							<div class="n-comment__thread">
-								<div class="n-comment">
-									<a class="n-comment__userpic" href="#"><img src="http://placehold.it/70x70" alt="" /></a>
-									<div class="n-comment__wrap">
-										<div class="n-comment__meta">
-											<a href="#">hoolya</a><span>хулиганос</span><span>10 мая 12:30</span><a href="#">Санкт-Петербург</a>
-										</div>
-										<div class="n-mark__holder">
-											<div class="n-mark">
-												<i class="n-mark__plus"></i>
-												<span class="n-mark__score n-mark__positive">+100500</span>
-												<i class="n-mark__minus"></i>
-											</div>
-										</div>
-										<div class="n-comment__text">
-											<p>Парень, тебя кто-то понимает, да?</p>
-										</div>
-										<div class="n-comment__options">
-											<a href="#">Удалить</a><a href="#">Редактировать</a><a href="#">Ссылка</a><a href="#">Заблокировать</a>
-										</div>
-										<a href="#" class="n-btn">Ответить</a>
-									</div>
-								</div>
-								<div class="n-comment">
-									<a class="n-comment__userpic" href="#"><img src="http://placehold.it/70x70" alt="" /></a>
-									<div class="n-comment__wrap">
-										<div class="n-comment__meta">
-											<a href="#">tema_</a><span>написал статус</span><span>10 мая 12:30</span><a href="#">Санкт-Петербург</a>
-										</div>
-										<div class="n-mark__holder">
-											<div class="n-mark">
-												<i class="n-mark__plus"></i>
-												<span class="n-mark__score n-mark__positive">+34</span>
-												<i class="n-mark__minus"></i>
-											</div>
-										</div>
-										<div class="n-comment__text">
-											<div class="n-comment__reply-to">hoolya:</div>
-											<p>Просто если ДД какое-то время даже в отвратительной форме у АВБ Лэмпс начал регулярно появляться в запасе</p>
-											<iframe width="460" height="315" src="http://www.youtube.com/embed/MApxkC8ltAc?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
-										</div>
-										<a href="#" class="n-btn">Ответить</a>
-									</div>
-								</div>
-								<!-- BEGIN n-add-reply -->
-								<div class="n-add-reply">
-									<span class="n-add-reply_username">tema_:<i></i></span>
-									<form>
-										<textarea class="n-input n-reply"></textarea>
-										<input class="n-btn" type="submit" value="Комментировать">
-									</form>
-								</div>
-								<!-- END n-add-reply -->
-							</div>
-							<!-- END n-comment__thread -->
-						</div>
-					</div>
-					<div class="n-comment">
-						<a class="n-comment__userpic" href="#"><img src="http://placehold.it/70x70" alt="" /></a>
-						<div class="n-comment__wrap">
-							<div class="n-comment__meta">
-								<a href="#">hoolya</a><span>хулиганос</span><span>10 мая 12:30</span><a href="#">Санкт-Петербург</a>
-							</div>
-							<div class="n-mark__holder">
-								<div class="n-mark">
-									<i class="n-mark__plus"></i>
-									<span class="n-mark__score n-mark__positive">+86</span>
-									<i class="n-mark__minus"></i>
-								</div>
-							</div>
-							<div class="n-comment__text">
-								<p>Лучше клуба нам не надо, чем ЗЕНИТ из Ленинграда!!!</p>
-								<img src="http://cs417822.userapi.com/v417822461/2f37/LJG4vpdi1wE.jpg" alt="Лучано" />
-							</div>
-							<div class="n-comment__options">
-								<a href="#">Удалить</a><a href="#">Редактировать</a><a href="#">Ссылка</a><a href="#">Заблокировать</a>
-							</div>
-							<a href="#" class="n-btn">Ответить</a>
-						</div>
-					</div>
-					<div class="n-comment">
-						<a class="n-comment__userpic" href="#"><img src="http://placehold.it/70x70" alt="" /></a>
-						<div class="n-comment__wrap">
-							<div class="n-comment__meta">
-								<a href="#">Myaso</a><span>какой ещё статус?</span><span>10 мая 12:30</span><a href="#">Москва</a>
-							</div>
-							<div class="n-mark__holder">
-								<div class="n-mark">
-									<i class="n-mark__plus"></i>
-									<span class="n-mark__score">0</span>
-									<i class="n-mark__minus"></i>
-								</div>
-							</div>
-							<div class="n-comment__text">
-								<p>— Эй, молодой красивый! Как Спартак сыграл?<br>— Проиграл!<br>— Тьфу ты, ставка не сыграла.<br>— А что так? Вы же гадалка!<br>— Так тут же наши играют, тут хрен угадаешь.</p>
-							</div>
-							<a href="#" class="n-btn">Ответить</a>
-						</div>
-					</div>
 					<!-- BEGIN n-comments__page-nav -->
 					<div class="n-comments__page-nav">
 						Страницы:
@@ -346,8 +288,47 @@
 	<div class="n-aside">
 		<!-- BEGIN n-popular -->
 		<div class="n-popular">
-			<h2 class="n-popular__title">Популярные записи</h2>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quod et repellat eius expedita quam a quisquam excepturi eum aut illum magni corrupti corporis perspiciatis dolorum doloremque iusto cumque placeat!
+			<h2 class="n-popular__title">Популярные места</h2>
+			<div class="n-popular__text">
+				<ol>
+					<li>
+						<a href="#">Макаронники (Makaronniki)</a>
+						<div class="n-popular__gathering">Собираются пойти — <a href="#">275 человек</a></div>
+					</li>
+					<li>
+						<a href="#">22.13 Любимое место</a>
+						<div class="n-popular__gathering">Собираются пойти — <a href="#">13 человек</a></div>
+					</li>
+					<li>
+						<a href="#">Столовая СЗГМУ им. И.И. Мечникова</a>
+						<div class="n-popular__gathering">Собираются пойти — <a href="#">1 человек</a></div>
+					</li>
+					<li>
+						<a href="#">Zimaleto (Zималeto)</a>
+						<div class="n-popular__gathering">Собираются пойти — <a href="#">42 человек</a></div>
+					</li>
+					<li>
+						<a href="#">COFFEESHOP COMPANY</a>
+						<div class="n-popular__gathering">Собираются пойти — <a href="#">18 человек</a></div>
+					</li>
+					<li>
+						<a href="#">Кафе «Гейзер»</a>
+						<div class="n-popular__gathering">Собираются пойти — <a href="#">25 человек</a></div>
+					</li>
+					<li>
+							<a href="#">Столовая СЗГМУ им. И.И. Мечникова и кого-то еще</a>
+							<div class="n-popular__gathering">Собираются пойти — <a href="#">86 человек</a></div>
+					</li>
+					<li>
+						<a href="#">Столовая СЗГМУ им. И.И. Мечникова</a>
+						<div class="n-popular__gathering">Собираются пойти — <a href="#">1 человек</a></div>
+					</li>
+					<li>
+						<a href="#">Zimaleto (Zималeto)</a>
+						<div class="n-popular__gathering">Собираются пойти — <a href="#">42 человек</a></div>
+					</li>
+				</ol>
+			</div>
 		</div>
 		<!-- END n-popular -->
 		<!-- BEGIN n-adv -->

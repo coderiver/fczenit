@@ -1,5 +1,54 @@
-.lteie8{
-	body{
-		background:red;
+.ie7{
+	.n-torso{
+		input{
+			border:0;
+			&.n-btn{
+				border:0;
+				&:hover, &:active{border:0;}
+			}
+		}
+		.n-content__nav__drop{
+			display: inline;
+		}
+		.n-comments__page-nav{
+			ul,li{display: inline;}
+			li{padding: 2px 5px;}
+		}
+		.n-comment__add-media{
+			display: inline;
+			padding-left: 15px;
+			z-index: 1;
+			margin-top: 5px;
+		}
+		.n-popular__text{
+			ol{
+				padding-left: 6px;
+			}
+		}
+		.n-location__search{
+			.n-input{border: 1px solid #dcdcdc}
+		}
+		.n-lightbox{
+			background-color: none;
+			background: url(../img/icons/ie_popup_bg.png);
+		}
+		.n-popup__members{
+			li{display: inline;}
+		}
+	}
+}
+
+.ie8{
+	.n-lightbox{
+		background-color: none;
+		background: url(../img/icons/ie_popup_bg.png);
+	}
+	.n-comment__add-media{
+		margin-top: 5px;
+	}
+	.n-places__list{
+		h3{
+			margin-left: -10px;
+		}
 	}
 }
