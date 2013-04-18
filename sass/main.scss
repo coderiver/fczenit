@@ -1066,6 +1066,10 @@
 		font-size: 10px;
 		font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
 	}
+	.n-checkpoint__title{
+		overflow: hidden;
+		height: 100%;
+	}
 	.n-icon-chekpoint{
 		position: absolute;
 		top: 0;
